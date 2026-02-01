@@ -9,8 +9,8 @@ def move_file(command: str) -> None:
     real_path_with_file = os.path.join(*split_path)
 
     if not os.path.isfile(src):
-        raise FileNotFoundError (f"No such file: {src}")
-    
+        raise FileNotFoundError(f"No such file: {src}")
+
     # check if command start with mv
     if cmd.lower() != "mv":
         return
